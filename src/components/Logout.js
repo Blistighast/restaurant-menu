@@ -1,4 +1,4 @@
-import firebase from 'firebase';
+import firebase from 'firebase/app';
 import { PropTypes } from 'prop-types';
 
 const Logout = ({ setUid }) => {
