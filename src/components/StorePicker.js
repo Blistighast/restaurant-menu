@@ -1,7 +1,7 @@
 /* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import { PropTypes } from 'prop-types';
-import { getFunName } from '../utils';
+import { getRestaurantName } from '../utils';
 
 class StorePicker extends React.Component {
   myInput = React.createRef();
@@ -15,13 +15,13 @@ class StorePicker extends React.Component {
   render() {
     return (
       <form className="store-selector" onSubmit={(e) => this.goToStore(e)}>
-        <h2>Please Enter A Store</h2>
+        <h2>Please Enter A Restaurant</h2>
         <input
           type="text"
           ref={this.myInput}
           required
           placeholder="Store Name"
-          defaultValue={getFunName()}
+          defaultValue={getRestaurantName()}
         />
         <button type="submit">Visit Store</button>
       </form>

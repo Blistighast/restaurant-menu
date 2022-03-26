@@ -54,7 +54,14 @@ const Inventory = ({
 
   // 1 check if logged in
   if (!uid) {
-    return <Login authenticate={authenticate} />;
+    return (
+      <div>
+        <Login authenticate={authenticate} />
+        <button onClick={loadSample} type="button">
+          Load Sample Fishes
+        </button>
+      </div>
+    );
   }
 
   // 2 check if they are not owner of current store
