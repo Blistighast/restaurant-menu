@@ -14,7 +14,7 @@ const Fish = ({
 
   return (
     <li className="menu-fish">
-      <img src={image} alt={name} />
+      <img src={process.env.PUBLIC_URL + image} alt={name} />
       <h3 className="fish-name">
         {name}
         <span className="price">{formatPrice(price)}</span>

@@ -58,7 +58,7 @@ const Inventory = ({
       <div>
         <Login authenticate={authenticate} />
         <button onClick={loadSample} type="button">
-          Load Sample Fishes
+          Load Sample Menu
         </button>
       </div>
     );
